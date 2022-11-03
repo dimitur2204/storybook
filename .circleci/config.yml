@@ -216,7 +216,7 @@ jobs:
           destination: sb-bench.tar.gz
   lint:
     executor:
-      class: medium
+      class: xlarge
       name: sb_node_16_classic
     steps:
       - git-shallow-clone/checkout_advanced:
@@ -258,7 +258,7 @@ jobs:
           path: scripts/junit.xml
   unit-tests:
     executor:
-      class: medium+
+      class: xlarge
       name: sb_node_16_browsers
     steps:
       - git-shallow-clone/checkout_advanced:
